@@ -1,0 +1,4612 @@
+{
+  "model": "resnet20_int8",
+  "page_size": 4096,
+  "asr": 90.17,
+  "acc_clean": 90.73,
+  "acc_final": 83.0,
+  "target_class": 2,
+  "place_pages": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    47,
+    48
+  ],
+  "hammer_pfns": [
+    "0x10e4b7",
+    "0x1088d8",
+    "0x10eda0",
+    "0x101d7f",
+    "0x10afc3",
+    "0x10872d",
+    "0x101bfb",
+    "0x10b152",
+    "0x100da8",
+    "0x1090f2",
+    "0x10b9e0",
+    "0x107cb3",
+    "0x10f420",
+    "0x1090de",
+    "0x102b7d",
+    "0x10ea7f",
+    "0x10d142",
+    "0x10f8ba",
+    "0x103227"
+  ],
+  "blacksmith_json": "artifacts/resnet20_int8/offline/blacksmith_fuzz_summary.json",
+  "sources": {
+    "attack_report": "artifacts/resnet20_int8/attack/attack_report.txt",
+      "profile": "artifacts/resnet20_int8/offline/dram_profile.json",
+    "pagemap": "artifacts/resnet20_int8/offline/ResNet20_INT8_pagemap.txt",
+    "fault_map": "artifacts/resnet20_int8/target_bits_locations.md"
+  },
+  "pages": [
+    {
+      "weight_page": 0,
+      "weight_pages": [
+        0,
+        2,
+        3,
+        65
+      ],
+      "dnn_page": 384,
+      "dram_page": 100,
+      "pfn": "0x10e4b7",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1107127,
+          "page_offset": 372,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 372
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 1284,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 1284
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 303,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 303
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 3156,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3156
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 2264,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 2264
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 3834,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3834
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 3915,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3915
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 1264,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 1264
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1107127,
+          "page_offset": 3115,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3115
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "conv_1_3x3.weight",
+          "tensor": "onnx::Conv_263",
+          "byte": 171,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 171,
+          "weight_page": 0,
+          "page_offset": 171
+        },
+        {
+          "layer": "conv_1_3x3.weight",
+          "tensor": "onnx::Conv_263",
+          "byte": 212,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 212,
+          "weight_page": 0,
+          "page_offset": 212
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 8,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 440,
+          "weight_page": 0,
+          "page_offset": 440
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 510,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 942,
+          "weight_page": 0,
+          "page_offset": 942
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 891,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 1323,
+          "weight_page": 0,
+          "page_offset": 1323
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 2078,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 2510,
+          "weight_page": 0,
+          "page_offset": 2510
+        },
+        {
+          "layer": "stage_1.2.conv_a.weight",
+          "tensor": "onnx::Conv_268",
+          "byte": 1639,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 11287,
+          "weight_page": 2,
+          "page_offset": 3095
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 1318,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 8662,
+          "weight_page": 2,
+          "page_offset": 470
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 1592,
+          "bit": 2,
+          "direction": "0->1",
+          "global_byte": 8936,
+          "weight_page": 2,
+          "page_offset": 744
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 2263,
+          "bit": 0,
+          "direction": "0->1",
+          "global_byte": 9607,
+          "weight_page": 2,
+          "page_offset": 1415
+        },
+        {
+          "layer": "stage_1.2.conv_b.weight",
+          "tensor": "onnx::Conv_269",
+          "byte": 1284,
+          "bit": 0,
+          "direction": "1->0",
+          "global_byte": 13236,
+          "weight_page": 3,
+          "page_offset": 948
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 588,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 14844,
+          "weight_page": 3,
+          "page_offset": 2556
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 914,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 15170,
+          "weight_page": 3,
+          "page_offset": 2882
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 1809,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 16065,
+          "weight_page": 3,
+          "page_offset": 3777
+        }
+      ],
+      "mapping": {
+        "index": 1,
+        "dnn_page": 384,
+        "dram_page": 100,
+        "num_flips": 3,
+        "beneficial_flips": 2,
+        "flips_0to1": 2,
+        "flips_1to0": 1,
+        "asr": 66.91,
+        "acc": 88.64
+      }
+    },
+    {
+      "weight_page": 1,
+      "weight_pages": [
+        1
+      ],
+      "dnn_page": 381,
+      "dram_page": 1376,
+      "pfn": "0x1088d8",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1083608,
+          "page_offset": 3626,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3626
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1083608,
+          "page_offset": 179,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 179
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_1.1.conv_a.weight",
+          "tensor": "onnx::Conv_266",
+          "byte": 179,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 5219,
+          "weight_page": 1,
+          "page_offset": 1123
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 393,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 7737,
+          "weight_page": 1,
+          "page_offset": 3641
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 505,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 7849,
+          "weight_page": 1,
+          "page_offset": 3753
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 524,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 7868,
+          "weight_page": 1,
+          "page_offset": 3772
+        },
+        {
+          "layer": "stage_1.0.conv_b.weight",
+          "tensor": "onnx::Conv_265",
+          "byte": 1715,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 4451,
+          "weight_page": 1,
+          "page_offset": 355
+        }
+      ],
+      "mapping": {
+        "index": 2,
+        "dnn_page": 381,
+        "dram_page": 1376,
+        "num_flips": 1,
+        "beneficial_flips": 1,
+        "flips_0to1": 1,
+        "flips_1to0": 0,
+        "asr": 68.2,
+        "acc": 88.3
+      }
+    },
+    {
+      "weight_page": 2,
+      "weight_pages": [
+        2
+      ],
+      "dnn_page": 383,
+      "dram_page": 1228,
+      "pfn": "0x10eda0",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1109408,
+          "page_offset": 2451,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 5,
+            "row": null,
+            "col": 2451
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1109408,
+          "page_offset": 1639,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 5,
+            "row": null,
+            "col": 1639
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_1.2.conv_a.weight",
+          "tensor": "onnx::Conv_268",
+          "byte": 1639,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 11287,
+          "weight_page": 2,
+          "page_offset": 3095
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 1318,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 8662,
+          "weight_page": 2,
+          "page_offset": 470
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 1592,
+          "bit": 2,
+          "direction": "0->1",
+          "global_byte": 8936,
+          "weight_page": 2,
+          "page_offset": 744
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 2263,
+          "bit": 0,
+          "direction": "0->1",
+          "global_byte": 9607,
+          "weight_page": 2,
+          "page_offset": 1415
+        }
+      ],
+      "mapping": {
+        "index": 3,
+        "dnn_page": 383,
+        "dram_page": 1228,
+        "num_flips": 1,
+        "beneficial_flips": 1,
+        "flips_0to1": 0,
+        "flips_1to0": 1,
+        "asr": 69.97,
+        "acc": 88.23
+      }
+    },
+    {
+      "weight_page": 0,
+      "weight_pages": [
+        0
+      ],
+      "dnn_page": 379,
+      "dram_page": 205,
+      "pfn": "0x101d7f",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1056127,
+          "page_offset": 8,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 8
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1056127,
+          "page_offset": 2498,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 2498
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1056127,
+          "page_offset": 891,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 891
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1056127,
+          "page_offset": 3025,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 3025
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1056127,
+          "page_offset": 510,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 510
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1056127,
+          "page_offset": 2078,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 2078
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1056127,
+          "page_offset": 2810,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 2810
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "conv_1_3x3.weight",
+          "tensor": "onnx::Conv_263",
+          "byte": 171,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 171,
+          "weight_page": 0,
+          "page_offset": 171
+        },
+        {
+          "layer": "conv_1_3x3.weight",
+          "tensor": "onnx::Conv_263",
+          "byte": 212,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 212,
+          "weight_page": 0,
+          "page_offset": 212
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 8,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 440,
+          "weight_page": 0,
+          "page_offset": 440
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 510,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 942,
+          "weight_page": 0,
+          "page_offset": 942
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 891,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 1323,
+          "weight_page": 0,
+          "page_offset": 1323
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 2078,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 2510,
+          "weight_page": 0,
+          "page_offset": 2510
+        }
+      ],
+      "mapping": {
+        "index": 4,
+        "dnn_page": 379,
+        "dram_page": 205,
+        "num_flips": 4,
+        "beneficial_flips": 3,
+        "flips_0to1": 2,
+        "flips_1to0": 2,
+        "asr": 71.91,
+        "acc": 87.19
+      }
+    },
+    {
+      "weight_page": 6,
+      "weight_pages": [
+        6,
+        7
+      ],
+      "dnn_page": 356,
+      "dram_page": 78,
+      "pfn": "0x10afc3",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1093571,
+          "page_offset": 3694,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 3694
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 1166,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1166
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 1512,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1512
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 920,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 920
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 46,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 46
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 1328,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1328
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 1832,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1832
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 1432,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1432
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093571,
+          "page_offset": 2344,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 2344
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 5942,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 24806,
+          "weight_page": 6,
+          "page_offset": 230
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 920,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 29000,
+          "weight_page": 7,
+          "page_offset": 328
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 1166,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 29246,
+          "weight_page": 7,
+          "page_offset": 574
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 1432,
+          "bit": 3,
+          "direction": "0->1",
+          "global_byte": 29512,
+          "weight_page": 7,
+          "page_offset": 840
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 1512,
+          "bit": 1,
+          "direction": "1->0",
+          "global_byte": 29592,
+          "weight_page": 7,
+          "page_offset": 920
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 3694,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 31774,
+          "weight_page": 7,
+          "page_offset": 3102
+        }
+      ],
+      "mapping": {
+        "index": 5,
+        "dnn_page": 356,
+        "dram_page": 78,
+        "num_flips": 5,
+        "beneficial_flips": 3,
+        "flips_0to1": 4,
+        "flips_1to0": 1,
+        "asr": 74.67,
+        "acc": 86.98
+      }
+    },
+    {
+      "weight_page": 3,
+      "weight_pages": [
+        3,
+        4
+      ],
+      "dnn_page": 374,
+      "dram_page": 208,
+      "pfn": "0x10872d",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1083181,
+          "page_offset": 1809,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 1809
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1083181,
+          "page_offset": 588,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 588
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1083181,
+          "page_offset": 4087,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 4087
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1083181,
+          "page_offset": 1136,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 1136
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1083181,
+          "page_offset": 2908,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 2908
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1083181,
+          "page_offset": 914,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 914
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1083181,
+          "page_offset": 3200,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 3200
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_1.2.conv_b.weight",
+          "tensor": "onnx::Conv_269",
+          "byte": 1284,
+          "bit": 0,
+          "direction": "1->0",
+          "global_byte": 13236,
+          "weight_page": 3,
+          "page_offset": 948
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 588,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 14844,
+          "weight_page": 3,
+          "page_offset": 2556
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 914,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 15170,
+          "weight_page": 3,
+          "page_offset": 2882
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 1809,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 16065,
+          "weight_page": 3,
+          "page_offset": 3777
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 2908,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 17164,
+          "weight_page": 4,
+          "page_offset": 780
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 3200,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 17456,
+          "weight_page": 4,
+          "page_offset": 1072
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 4087,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 18343,
+          "weight_page": 4,
+          "page_offset": 1959
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 186,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 19050,
+          "weight_page": 4,
+          "page_offset": 2666
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 747,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 19611,
+          "weight_page": 4,
+          "page_offset": 3227
+        }
+      ],
+      "mapping": {
+        "index": 6,
+        "dnn_page": 374,
+        "dram_page": 208,
+        "num_flips": 6,
+        "beneficial_flips": 4,
+        "flips_0to1": 3,
+        "flips_1to0": 3,
+        "asr": 77.83,
+        "acc": 86.28
+      }
+    },
+    {
+      "weight_page": 11,
+      "weight_pages": [
+        11,
+        12
+      ],
+      "dnn_page": 362,
+      "dram_page": 133,
+      "pfn": "0x101bfb",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1055739,
+          "page_offset": 1201,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1201
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 1755,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1755
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 2421,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 2421
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 1855,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1855
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 811,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 811
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 434,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 434
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 2917,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 2917
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1055739,
+          "page_offset": 2763,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 2763
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 811,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 47323,
+          "weight_page": 11,
+          "page_offset": 2267
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 1201,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 47713,
+          "weight_page": 11,
+          "page_offset": 2657
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 1855,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 48367,
+          "weight_page": 11,
+          "page_offset": 3311
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 2421,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 48933,
+          "weight_page": 11,
+          "page_offset": 3877
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4408,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 50920,
+          "weight_page": 12,
+          "page_offset": 1768
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4570,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 51082,
+          "weight_page": 12,
+          "page_offset": 1930
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4803,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 51315,
+          "weight_page": 12,
+          "page_offset": 2163
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4937,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 51449,
+          "weight_page": 12,
+          "page_offset": 2297
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 5651,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 52163,
+          "weight_page": 12,
+          "page_offset": 3011
+        }
+      ],
+      "mapping": {
+        "index": 7,
+        "dnn_page": 362,
+        "dram_page": 133,
+        "num_flips": 4,
+        "beneficial_flips": 2,
+        "flips_0to1": 2,
+        "flips_1to0": 2,
+        "asr": 78.69,
+        "acc": 85.73
+      }
+    },
+    {
+      "weight_page": 1,
+      "weight_pages": [
+        1,
+        2
+      ],
+      "dnn_page": 382,
+      "dram_page": 15,
+      "pfn": "0x10b152",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1093970,
+          "page_offset": 2479,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 2479
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 1318,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1318
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 505,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 505
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 393,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 393
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 1903,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1903
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 524,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 524
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 1592,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 1592
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 2314,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 2314
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 3484,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 3484
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1093970,
+          "page_offset": 2263,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 3,
+            "row": null,
+            "col": 2263
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_1.1.conv_a.weight",
+          "tensor": "onnx::Conv_266",
+          "byte": 179,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 5219,
+          "weight_page": 1,
+          "page_offset": 1123
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 393,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 7737,
+          "weight_page": 1,
+          "page_offset": 3641
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 505,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 7849,
+          "weight_page": 1,
+          "page_offset": 3753
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 524,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 7868,
+          "weight_page": 1,
+          "page_offset": 3772
+        },
+        {
+          "layer": "stage_1.0.conv_b.weight",
+          "tensor": "onnx::Conv_265",
+          "byte": 1715,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 4451,
+          "weight_page": 1,
+          "page_offset": 355
+        },
+        {
+          "layer": "stage_1.2.conv_a.weight",
+          "tensor": "onnx::Conv_268",
+          "byte": 1639,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 11287,
+          "weight_page": 2,
+          "page_offset": 3095
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 1318,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 8662,
+          "weight_page": 2,
+          "page_offset": 470
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 1592,
+          "bit": 2,
+          "direction": "0->1",
+          "global_byte": 8936,
+          "weight_page": 2,
+          "page_offset": 744
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 2263,
+          "bit": 0,
+          "direction": "0->1",
+          "global_byte": 9607,
+          "weight_page": 2,
+          "page_offset": 1415
+        }
+      ],
+      "mapping": {
+        "index": 8,
+        "dnn_page": 382,
+        "dram_page": 15,
+        "num_flips": 6,
+        "beneficial_flips": 5,
+        "flips_0to1": 4,
+        "flips_1to0": 2,
+        "asr": 79.78,
+        "acc": 85.2
+      }
+    },
+    {
+      "weight_page": 6,
+      "weight_pages": [
+        6,
+        7
+      ],
+      "dnn_page": 357,
+      "dram_page": 92,
+      "pfn": "0x100da8",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1052072,
+          "page_offset": 2948,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 2948
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 4026,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 4026
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 3144,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 3144
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 1822,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 1822
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 3875,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 3875
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 2123,
+          "bitmask": 8,
+          "bit_position": 3,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 2123
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 3691,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 3691
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 929,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 929
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1052072,
+          "page_offset": 169,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 7,
+            "row": null,
+            "col": 169
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 5942,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 24806,
+          "weight_page": 6,
+          "page_offset": 230
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 920,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 29000,
+          "weight_page": 7,
+          "page_offset": 328
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 1166,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 29246,
+          "weight_page": 7,
+          "page_offset": 574
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 1432,
+          "bit": 3,
+          "direction": "0->1",
+          "global_byte": 29512,
+          "weight_page": 7,
+          "page_offset": 840
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 1512,
+          "bit": 1,
+          "direction": "1->0",
+          "global_byte": 29592,
+          "weight_page": 7,
+          "page_offset": 920
+        },
+        {
+          "layer": "stage_2.1.conv_a.weight",
+          "tensor": "onnx::Conv_272",
+          "byte": 3694,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 31774,
+          "weight_page": 7,
+          "page_offset": 3102
+        }
+      ],
+      "mapping": {
+        "index": 9,
+        "dnn_page": 357,
+        "dram_page": 92,
+        "num_flips": 5,
+        "beneficial_flips": 2,
+        "flips_0to1": 4,
+        "flips_1to0": 1,
+        "asr": 80.75,
+        "acc": 85.28
+      }
+    },
+    {
+      "weight_page": 11,
+      "weight_pages": [
+        11,
+        12
+      ],
+      "dnn_page": 363,
+      "dram_page": 143,
+      "pfn": "0x1090f2",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1085682,
+          "page_offset": 707,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 707
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 3097,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 3097
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 1555,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 1555
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 841,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 841
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 559,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 559
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 3027,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 3027
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 312,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 312
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1085682,
+          "page_offset": 474,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 6,
+            "row": null,
+            "col": 474
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 811,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 47323,
+          "weight_page": 11,
+          "page_offset": 2267
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 1201,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 47713,
+          "weight_page": 11,
+          "page_offset": 2657
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 1855,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 48367,
+          "weight_page": 11,
+          "page_offset": 3311
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 2421,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 48933,
+          "weight_page": 11,
+          "page_offset": 3877
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4408,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 50920,
+          "weight_page": 12,
+          "page_offset": 1768
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4570,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 51082,
+          "weight_page": 12,
+          "page_offset": 1930
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4803,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 51315,
+          "weight_page": 12,
+          "page_offset": 2163
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 4937,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 51449,
+          "weight_page": 12,
+          "page_offset": 2297
+        },
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 5651,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 52163,
+          "weight_page": 12,
+          "page_offset": 3011
+        }
+      ],
+      "mapping": {
+        "index": 10,
+        "dnn_page": 363,
+        "dram_page": 143,
+        "num_flips": 6,
+        "beneficial_flips": 4,
+        "flips_0to1": 4,
+        "flips_1to0": 2,
+        "asr": 83.22,
+        "acc": 85.14
+      }
+    },
+    {
+      "weight_page": 0,
+      "weight_pages": [
+        0,
+        1
+      ],
+      "dnn_page": 380,
+      "dram_page": 1729,
+      "pfn": "0x10b9e0",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1096160,
+          "page_offset": 2559,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 15,
+            "row": null,
+            "col": 2559
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1096160,
+          "page_offset": 1715,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 15,
+            "row": null,
+            "col": 1715
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "conv_1_3x3.weight",
+          "tensor": "onnx::Conv_263",
+          "byte": 171,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 171,
+          "weight_page": 0,
+          "page_offset": 171
+        },
+        {
+          "layer": "conv_1_3x3.weight",
+          "tensor": "onnx::Conv_263",
+          "byte": 212,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 212,
+          "weight_page": 0,
+          "page_offset": 212
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 8,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 440,
+          "weight_page": 0,
+          "page_offset": 440
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 510,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 942,
+          "weight_page": 0,
+          "page_offset": 942
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 891,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 1323,
+          "weight_page": 0,
+          "page_offset": 1323
+        },
+        {
+          "layer": "stage_1.0.conv_a.weight",
+          "tensor": "onnx::Conv_264",
+          "byte": 2078,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 2510,
+          "weight_page": 0,
+          "page_offset": 2510
+        },
+        {
+          "layer": "stage_1.1.conv_a.weight",
+          "tensor": "onnx::Conv_266",
+          "byte": 179,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 5219,
+          "weight_page": 1,
+          "page_offset": 1123
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 393,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 7737,
+          "weight_page": 1,
+          "page_offset": 3641
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 505,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 7849,
+          "weight_page": 1,
+          "page_offset": 3753
+        },
+        {
+          "layer": "stage_1.1.conv_b.weight",
+          "tensor": "onnx::Conv_267",
+          "byte": 524,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 7868,
+          "weight_page": 1,
+          "page_offset": 3772
+        },
+        {
+          "layer": "stage_1.0.conv_b.weight",
+          "tensor": "onnx::Conv_265",
+          "byte": 1715,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 4451,
+          "weight_page": 1,
+          "page_offset": 355
+        }
+      ],
+      "mapping": {
+        "index": 11,
+        "dnn_page": 380,
+        "dram_page": 1729,
+        "num_flips": 1,
+        "beneficial_flips": 1,
+        "flips_0to1": 1,
+        "flips_1to0": 0,
+        "asr": 84.44,
+        "acc": 84.5
+      }
+    },
+    {
+      "weight_page": 4,
+      "weight_pages": [
+        4,
+        5
+      ],
+      "dnn_page": 354,
+      "dram_page": 2441,
+      "pfn": "0x107cb3",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1080499,
+          "page_offset": 1846,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 12,
+            "row": null,
+            "col": 1846
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 2908,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 17164,
+          "weight_page": 4,
+          "page_offset": 780
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 3200,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 17456,
+          "weight_page": 4,
+          "page_offset": 1072
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 4087,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 18343,
+          "weight_page": 4,
+          "page_offset": 1959
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 186,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 19050,
+          "weight_page": 4,
+          "page_offset": 2666
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 747,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 19611,
+          "weight_page": 4,
+          "page_offset": 3227
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 2735,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 21599,
+          "weight_page": 5,
+          "page_offset": 1119
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 3159,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 22023,
+          "weight_page": 5,
+          "page_offset": 1543
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 3869,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 22733,
+          "weight_page": 5,
+          "page_offset": 2253
+        }
+      ],
+      "mapping": {
+        "index": 12,
+        "dnn_page": 354,
+        "dram_page": 2441,
+        "num_flips": 1,
+        "beneficial_flips": 1,
+        "flips_0to1": 1,
+        "flips_1to0": 0,
+        "asr": 85.12,
+        "acc": 84.5
+      }
+    },
+    {
+      "weight_page": 9,
+      "weight_pages": [
+        9,
+        10
+      ],
+      "dnn_page": 360,
+      "dram_page": 18,
+      "pfn": "0x10f420",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1111072,
+          "page_offset": 555,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 555
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 2690,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 2690
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 682,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 682
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 3571,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 3571
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 2411,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 2411
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 429,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 429
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 1630,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1630
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 1823,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1823
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 3758,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 3758
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1111072,
+          "page_offset": 1053,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1053
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 505,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 37801,
+          "weight_page": 9,
+          "page_offset": 937
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 1269,
+          "bit": 5,
+          "direction": "1->0",
+          "global_byte": 38565,
+          "weight_page": 9,
+          "page_offset": 1701
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 2273,
+          "bit": 4,
+          "direction": "1->0",
+          "global_byte": 39569,
+          "weight_page": 9,
+          "page_offset": 2705
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 3081,
+          "bit": 1,
+          "direction": "1->0",
+          "global_byte": 40377,
+          "weight_page": 9,
+          "page_offset": 3513
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 4525,
+          "bit": 0,
+          "direction": "1->0",
+          "global_byte": 41821,
+          "weight_page": 10,
+          "page_offset": 861
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 4651,
+          "bit": 1,
+          "direction": "1->0",
+          "global_byte": 41947,
+          "weight_page": 10,
+          "page_offset": 987
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 5726,
+          "bit": 1,
+          "direction": "0->1",
+          "global_byte": 43022,
+          "weight_page": 10,
+          "page_offset": 2062
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 5919,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 43215,
+          "weight_page": 10,
+          "page_offset": 2255
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 6786,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 44082,
+          "weight_page": 10,
+          "page_offset": 3122
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 7667,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 44963,
+          "weight_page": 10,
+          "page_offset": 4003
+        }
+      ],
+      "mapping": {
+        "index": 13,
+        "dnn_page": 360,
+        "dram_page": 18,
+        "num_flips": 6,
+        "beneficial_flips": 5,
+        "flips_0to1": 2,
+        "flips_1to0": 4,
+        "asr": 85.61,
+        "acc": 84.56
+      }
+    },
+    {
+      "weight_page": 13,
+      "weight_pages": [
+        13,
+        14
+      ],
+      "dnn_page": 365,
+      "dram_page": 1167,
+      "pfn": "0x1090de",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1085662,
+          "page_offset": 2770,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 2770
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1085662,
+          "page_offset": 1827,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 4,
+            "row": null,
+            "col": 1827
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 7123,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 53635,
+          "weight_page": 13,
+          "page_offset": 387
+        },
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 1827,
+          "bit": 4,
+          "direction": "1->0",
+          "global_byte": 57555,
+          "weight_page": 14,
+          "page_offset": 211
+        },
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 2770,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 58498,
+          "weight_page": 14,
+          "page_offset": 1154
+        }
+      ],
+      "mapping": {
+        "index": 14,
+        "dnn_page": 365,
+        "dram_page": 1167,
+        "num_flips": 2,
+        "beneficial_flips": 1,
+        "flips_0to1": 1,
+        "flips_1to0": 1,
+        "asr": 86.19,
+        "acc": 84.5
+      }
+    },
+    {
+      "weight_page": 4,
+      "weight_pages": [
+        4,
+        5
+      ],
+      "dnn_page": 353,
+      "dram_page": 153,
+      "pfn": "0x102b7d",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1059709,
+          "page_offset": 2735,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 2735
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 3449,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 3449
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 3080,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 3080
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 3159,
+          "bitmask": 4,
+          "bit_position": 2,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 3159
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 2834,
+          "bitmask": 1,
+          "bit_position": 0,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 2834
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 3869,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 3869
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 747,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 747
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1059709,
+          "page_offset": 186,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 9,
+            "row": null,
+            "col": 186
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 2908,
+          "bit": 3,
+          "direction": "1->0",
+          "global_byte": 17164,
+          "weight_page": 4,
+          "page_offset": 780
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 3200,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 17456,
+          "weight_page": 4,
+          "page_offset": 1072
+        },
+        {
+          "layer": "stage_2.0.conv_a.weight",
+          "tensor": "onnx::Conv_270",
+          "byte": 4087,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 18343,
+          "weight_page": 4,
+          "page_offset": 1959
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 186,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 19050,
+          "weight_page": 4,
+          "page_offset": 2666
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 747,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 19611,
+          "weight_page": 4,
+          "page_offset": 3227
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 2735,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 21599,
+          "weight_page": 5,
+          "page_offset": 1119
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 3159,
+          "bit": 2,
+          "direction": "1->0",
+          "global_byte": 22023,
+          "weight_page": 5,
+          "page_offset": 1543
+        },
+        {
+          "layer": "stage_2.0.conv_b.weight",
+          "tensor": "onnx::Conv_271",
+          "byte": 3869,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 22733,
+          "weight_page": 5,
+          "page_offset": 2253
+        }
+      ],
+      "mapping": {
+        "index": 15,
+        "dnn_page": 353,
+        "dram_page": 153,
+        "num_flips": 5,
+        "beneficial_flips": 3,
+        "flips_0to1": 2,
+        "flips_1to0": 3,
+        "asr": 86.88,
+        "acc": 84.42
+      }
+    },
+    {
+      "weight_page": 13,
+      "weight_pages": [
+        13
+      ],
+      "dnn_page": 367,
+      "dram_page": 3,
+      "pfn": "0x10ea7f",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1108607,
+          "page_offset": 128,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 128
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 2422,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 2422
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 925,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 925
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 1057,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 1057
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 668,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 668
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 105,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 105
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 1013,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 1013
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 1719,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 1719
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 3656,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 3656
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1108607,
+          "page_offset": 3773,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 1,
+            "row": null,
+            "col": 3773
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.2.conv_a.weight",
+          "tensor": "onnx::Conv_274",
+          "byte": 7123,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 53635,
+          "weight_page": 13,
+          "page_offset": 387
+        }
+      ],
+      "mapping": {
+        "index": 16,
+        "dnn_page": 367,
+        "dram_page": 3,
+        "num_flips": 5,
+        "beneficial_flips": 3,
+        "flips_0to1": 4,
+        "flips_1to0": 1,
+        "asr": 87.53,
+        "acc": 84.02
+      }
+    },
+    {
+      "weight_page": 15,
+      "weight_pages": [
+        15,
+        16
+      ],
+      "dnn_page": 330,
+      "dram_page": 1068,
+      "pfn": "0x10d142",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1102146,
+          "page_offset": 3965,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 3965
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1102146,
+          "page_offset": 116,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 2,
+            "row": null,
+            "col": 116
+          },
+          "direction": "0->1"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 8297,
+          "bit": 4,
+          "direction": "0->1",
+          "global_byte": 64025,
+          "weight_page": 15,
+          "page_offset": 2585
+        },
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 8320,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 64048,
+          "weight_page": 15,
+          "page_offset": 2608
+        },
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 8860,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 64588,
+          "weight_page": 15,
+          "page_offset": 3148
+        },
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 9117,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 64845,
+          "weight_page": 15,
+          "page_offset": 3405
+        },
+        {
+          "layer": "stage_2.2.conv_b.weight",
+          "tensor": "onnx::Conv_275",
+          "byte": 9205,
+          "bit": 5,
+          "direction": "1->0",
+          "global_byte": 64933,
+          "weight_page": 15,
+          "page_offset": 3493
+        },
+        {
+          "layer": "stage_3.0.conv_a.weight",
+          "tensor": "onnx::Conv_276",
+          "byte": 116,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 65060,
+          "weight_page": 15,
+          "page_offset": 3620
+        }
+      ],
+      "mapping": {
+        "index": 17,
+        "dnn_page": 330,
+        "dram_page": 1068,
+        "num_flips": 1,
+        "beneficial_flips": 1,
+        "flips_0to1": 1,
+        "flips_1to0": 0,
+        "asr": 88.36,
+        "acc": 83.78
+      }
+    },
+    {
+      "weight_page": 9,
+      "weight_pages": [
+        9,
+        10
+      ],
+      "dnn_page": 359,
+      "dram_page": 320,
+      "pfn": "0x10f8ba",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1112250,
+          "page_offset": 3462,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 3462
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1112250,
+          "page_offset": 2273,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 2273
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1112250,
+          "page_offset": 3552,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 3552
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1112250,
+          "page_offset": 650,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 650
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1112250,
+          "page_offset": 505,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 505
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1112250,
+          "page_offset": 3081,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 3081
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1112250,
+          "page_offset": 1269,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 14,
+            "row": null,
+            "col": 1269
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 505,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 37801,
+          "weight_page": 9,
+          "page_offset": 937
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 1269,
+          "bit": 5,
+          "direction": "1->0",
+          "global_byte": 38565,
+          "weight_page": 9,
+          "page_offset": 1701
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 2273,
+          "bit": 4,
+          "direction": "1->0",
+          "global_byte": 39569,
+          "weight_page": 9,
+          "page_offset": 2705
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 3081,
+          "bit": 1,
+          "direction": "1->0",
+          "global_byte": 40377,
+          "weight_page": 9,
+          "page_offset": 3513
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 4525,
+          "bit": 0,
+          "direction": "1->0",
+          "global_byte": 41821,
+          "weight_page": 10,
+          "page_offset": 861
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 4651,
+          "bit": 1,
+          "direction": "1->0",
+          "global_byte": 41947,
+          "weight_page": 10,
+          "page_offset": 987
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 5726,
+          "bit": 1,
+          "direction": "0->1",
+          "global_byte": 43022,
+          "weight_page": 10,
+          "page_offset": 2062
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 5919,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 43215,
+          "weight_page": 10,
+          "page_offset": 2255
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 6786,
+          "bit": 7,
+          "direction": "0->1",
+          "global_byte": 44082,
+          "weight_page": 10,
+          "page_offset": 3122
+        },
+        {
+          "layer": "stage_2.1.conv_b.weight",
+          "tensor": "onnx::Conv_273",
+          "byte": 7667,
+          "bit": 6,
+          "direction": "1->0",
+          "global_byte": 44963,
+          "weight_page": 10,
+          "page_offset": 4003
+        }
+      ],
+      "mapping": {
+        "index": 18,
+        "dnn_page": 359,
+        "dram_page": 320,
+        "num_flips": 4,
+        "beneficial_flips": 2,
+        "flips_0to1": 1,
+        "flips_1to0": 3,
+        "asr": 88.75,
+        "acc": 83.7
+      }
+    },
+    {
+      "weight_page": 47,
+      "weight_pages": [
+        47,
+        48
+      ],
+      "dnn_page": 291,
+      "dram_page": 398,
+      "pfn": "0x103227",
+      "pattern_id": "1c1f5d93-fad8-4431-a06f-90dcb66c3e79",
+      "aggressor_to_addr": [
+        [
+          6,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8202
+          }
+        ],
+        [
+          5,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 8200
+          }
+        ],
+        [
+          8,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4921
+          }
+        ],
+        [
+          7,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 4919
+          }
+        ],
+        [
+          2,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2326
+          }
+        ],
+        [
+          1,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 2324
+          }
+        ],
+        [
+          4,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1254
+          }
+        ],
+        [
+          3,
+          {
+            "bank": 2,
+            "col": 0,
+            "row": 1252
+          }
+        ]
+      ],
+      "bit_flips": [
+        {
+          "pfn": 1061415,
+          "page_offset": 967,
+          "bitmask": 32,
+          "bit_position": 5,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 967
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1061415,
+          "page_offset": 2742,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 2742
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1061415,
+          "page_offset": 3544,
+          "bitmask": 64,
+          "bit_position": 6,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3544
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1061415,
+          "page_offset": 2389,
+          "bitmask": 128,
+          "bit_position": 7,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 2389
+          },
+          "direction": "1->0"
+        },
+        {
+          "pfn": 1061415,
+          "page_offset": 3529,
+          "bitmask": 2,
+          "bit_position": 1,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 3529
+          },
+          "direction": "0->1"
+        },
+        {
+          "pfn": 1061415,
+          "page_offset": 2434,
+          "bitmask": 16,
+          "bit_position": 4,
+          "dram_addr": {
+            "bank": 8,
+            "row": null,
+            "col": 2434
+          },
+          "direction": "1->0"
+        }
+      ],
+      "weight_flips": [
+        {
+          "layer": "stage_3.2.conv_a.weight",
+          "tensor": "onnx::Conv_280",
+          "byte": 967,
+          "bit": 5,
+          "direction": "1->0",
+          "global_byte": 194935,
+          "weight_page": 47,
+          "page_offset": 2423
+        },
+        {
+          "layer": "stage_3.2.conv_a.weight",
+          "tensor": "onnx::Conv_280",
+          "byte": 2389,
+          "bit": 7,
+          "direction": "1->0",
+          "global_byte": 196357,
+          "weight_page": 47,
+          "page_offset": 3845
+        },
+        {
+          "layer": "stage_3.2.conv_a.weight",
+          "tensor": "onnx::Conv_280",
+          "byte": 3529,
+          "bit": 1,
+          "direction": "0->1",
+          "global_byte": 197497,
+          "weight_page": 48,
+          "page_offset": 889
+        },
+        {
+          "layer": "stage_3.2.conv_a.weight",
+          "tensor": "onnx::Conv_280",
+          "byte": 3544,
+          "bit": 6,
+          "direction": "0->1",
+          "global_byte": 197512,
+          "weight_page": 48,
+          "page_offset": 904
+        }
+      ],
+      "mapping": {
+        "index": 19,
+        "dnn_page": 291,
+        "dram_page": 398,
+        "num_flips": 4,
+        "beneficial_flips": 2,
+        "flips_0to1": 2,
+        "flips_1to0": 2,
+        "asr": 90.17,
+        "acc": 83.0
+      }
+    }
+  ]
+}

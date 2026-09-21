@@ -1,0 +1,38 @@
+{
+  "so_path": "_pyopenvino.so",
+  "openvino_version": "2025.1.0-18503-6fec06580ab-releases/2025/1",
+  "python_version": "3.11.7",
+  "massage": {
+    "role": "massage",
+    "symbol": "CompiledModel::create_infer_request",
+    "anchor_kind": "caller_return_site",
+    "lifecycle_point": "after_CIR_before_weight_bind",
+    "file_offset": 1115816,
+    "file_offset_hex": "0x1106a8",
+    "cacheline_file_offset": 1115776,
+    "validated_bytes": "660f6f45a0488b7d",
+    "description": "ret-from call CompiledModel::create_infer_request@plt (call 0x1106a3)",
+    "single_fire": true,
+    "fallback_offsets": [
+      1003703,
+      1115401
+    ]
+  },
+  "hammer": {
+    "role": "hammer",
+    "symbol": "InferRequest::set_input_tensor",
+    "anchor_kind": "caller_return_site",
+    "lifecycle_point": "after_set_input_tensor_before_infer",
+    "file_offset": 1203267,
+    "file_offset_hex": "0x125c43",
+    "cacheline_file_offset": 1203264,
+    "validated_bytes": "488b0566c5350048",
+    "description": "ret-from set_input_tensor@plt",
+    "single_fire": true,
+    "fallback_offsets": [
+      1091290,
+      1171577,
+      1171689
+    ]
+  }
+}

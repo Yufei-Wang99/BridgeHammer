@@ -1,0 +1,589 @@
+{
+  "combined_weights_file": "combined_weights.bin",
+  "combined_weights_size": 268336,
+  "combined_weights_pages": 66,
+  "weights": [
+    {
+      "tensor_name": "onnx::Conv_263",
+      "pytorch_name": "conv_1_3x3.weight",
+      "shape": [
+        16,
+        3,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.008916491642594337,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_263.raw",
+      "byte_offset": 0,
+      "bytes_length": 432,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 0,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_264",
+      "pytorch_name": "stage_1.0.conv_a.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.003938079811632633,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_264.raw",
+      "byte_offset": 0,
+      "bytes_length": 2304,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 432,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_265",
+      "pytorch_name": "stage_1.0.conv_b.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.002980321180075407,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_265.raw",
+      "byte_offset": 0,
+      "bytes_length": 2304,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 2736,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_266",
+      "pytorch_name": "stage_1.1.conv_a.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0041270069777965546,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_266.raw",
+      "byte_offset": 0,
+      "bytes_length": 2304,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 5040,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_267",
+      "pytorch_name": "stage_1.1.conv_b.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.002934659132733941,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_267.raw",
+      "byte_offset": 0,
+      "bytes_length": 2304,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 7344,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_268",
+      "pytorch_name": "stage_1.2.conv_a.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0031426753848791122,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_268.raw",
+      "byte_offset": 0,
+      "bytes_length": 2304,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 9648,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_269",
+      "pytorch_name": "stage_1.2.conv_b.weight",
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0026738489978015423,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_269.raw",
+      "byte_offset": 0,
+      "bytes_length": 2304,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 11952,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_270",
+      "pytorch_name": "stage_2.0.conv_a.weight",
+      "shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0024956318084150553,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_270.raw",
+      "byte_offset": 0,
+      "bytes_length": 4608,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 14256,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_271",
+      "pytorch_name": "stage_2.0.conv_b.weight",
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0021156184375286102,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_271.raw",
+      "byte_offset": 0,
+      "bytes_length": 9216,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 18864,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_272",
+      "pytorch_name": "stage_2.1.conv_a.weight",
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.002149035455659032,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_272.raw",
+      "byte_offset": 0,
+      "bytes_length": 9216,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 28080,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_273",
+      "pytorch_name": "stage_2.1.conv_b.weight",
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0020342417992651463,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_273.raw",
+      "byte_offset": 0,
+      "bytes_length": 9216,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 37296,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_274",
+      "pytorch_name": "stage_2.2.conv_a.weight",
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0026128659956157207,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_274.raw",
+      "byte_offset": 0,
+      "bytes_length": 9216,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 46512,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_275",
+      "pytorch_name": "stage_2.2.conv_b.weight",
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0019165006233379245,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_275.raw",
+      "byte_offset": 0,
+      "bytes_length": 9216,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 55728,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_276",
+      "pytorch_name": "stage_3.0.conv_a.weight",
+      "shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0018253606976941228,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_276.raw",
+      "byte_offset": 0,
+      "bytes_length": 18432,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 64944,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_277",
+      "pytorch_name": "stage_3.0.conv_b.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0015199728077277541,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_277.raw",
+      "byte_offset": 0,
+      "bytes_length": 36864,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 83376,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_278",
+      "pytorch_name": "stage_3.1.conv_a.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0016624009003862739,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_278.raw",
+      "byte_offset": 0,
+      "bytes_length": 36864,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 120240,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_279",
+      "pytorch_name": "stage_3.1.conv_b.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0013450996484607458,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_279.raw",
+      "byte_offset": 0,
+      "bytes_length": 36864,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 157104,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_280",
+      "pytorch_name": "stage_3.2.conv_a.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0014311699196696281,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_280.raw",
+      "byte_offset": 0,
+      "bytes_length": 36864,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 193968,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Conv_281",
+      "pytorch_name": "stage_3.2.conv_b.weight",
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "int8",
+      "scale": 0.0009498545550741255,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Conv_281.raw",
+      "byte_offset": 0,
+      "bytes_length": 36864,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 230832,
+      "combined_file": "combined_weights.bin"
+    },
+    {
+      "tensor_name": "onnx::Gemm_283",
+      "pytorch_name": "classifier.weight",
+      "shape": [
+        10,
+        64
+      ],
+      "dtype": "int8",
+      "scale": 0.01015562191605568,
+      "zero_point": 0,
+      "raw_file_path": "raw/onnx_Gemm_283.raw",
+      "byte_offset": 0,
+      "bytes_length": 640,
+      "element_order": "row-major",
+      "endianness": "little-endian",
+      "combined_offset": 267696,
+      "combined_file": "combined_weights.bin"
+    }
+  ],
+  "non_int8_weights": [
+    {
+      "tensor_name": "inner.bn_1.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_1.0.bn_a.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_1.0.bn_b.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_1.1.bn_a.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_1.1.bn_b.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_1.2.bn_a.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_1.2.bn_b.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 64
+    },
+    {
+      "tensor_name": "inner.stage_2.0.bn_a.bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 128
+    },
+    {
+      "tensor_name": "inner.stage_2.0.bn_b.bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 128
+    },
+    {
+      "tensor_name": "inner.stage_2.1.bn_a.bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 128
+    },
+    {
+      "tensor_name": "inner.stage_2.1.bn_b.bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 128
+    },
+    {
+      "tensor_name": "inner.stage_2.2.bn_a.bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 128
+    },
+    {
+      "tensor_name": "inner.stage_2.2.bn_b.bias",
+      "shape": [
+        32
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 128
+    },
+    {
+      "tensor_name": "inner.stage_3.0.bn_a.bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 256
+    },
+    {
+      "tensor_name": "inner.stage_3.0.bn_b.bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 256
+    },
+    {
+      "tensor_name": "inner.stage_3.1.bn_a.bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 256
+    },
+    {
+      "tensor_name": "inner.stage_3.1.bn_b.bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 256
+    },
+    {
+      "tensor_name": "inner.stage_3.2.bn_a.bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 256
+    },
+    {
+      "tensor_name": "inner.stage_3.2.bn_b.bias",
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 256
+    },
+    {
+      "tensor_name": "inner.classifier.bias",
+      "shape": [
+        10
+      ],
+      "dtype": "float32",
+      "raw_file_path": null,
+      "bytes_length": 40
+    }
+  ],
+  "weights_md5": "bca5e5ebb0e9285bdca20566171ccea1",
+  "weights_sha256": "be46bf9ec81ac41352e4c46fdec69c2e9c2ec2face42a0fc53069e21b0ed0266"
+}

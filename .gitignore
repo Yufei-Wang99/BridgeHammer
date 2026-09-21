@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.so
+eviction/build/
+blacksmith/build/
+results/
+.venv*/
+*.egg-info/
+.cache/
+*.log
+stdout.log
+kernel.errors.txt
+.DS_Store

@@ -1,0 +1,4 @@
+numpy>=1.24
+# openvino==2025.1.0
+# torch
+# torchvision
