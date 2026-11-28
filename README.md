@@ -2,6 +2,7 @@
 
 Artifact for *BridgeHammer: DNN Backdoor Attack via CPU-iGPU Shared-memory Rowhammer*.
 
+[Project website](https://noisyor.github.io/ROBBIN-Rowhammer-Based-Backdoor-Injection-during-Inference/#bridgehammer)
 ## Overview
 
 Heterogeneous SoCs share physical memory between the CPU and the iGPU, so CPU-side Rowhammer can corrupt a DNN that the iGPU uses for inference. BridgeHammer is a backdoor attack that places the target weights before zero-copy GPU bind and flips them before inference; later GPU inferences then consume the corrupted model.
